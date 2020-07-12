@@ -1,0 +1,7 @@
+{
+  "speech.hear|block": "识别语音",
+  "speech.init|block": "初始化语音模块 TX %tx RX %rx",
+  "speech.say|block": "说 %str",
+  "speech|block": "speech",
+  "{id:category}Speech": "Speech"
+}
