@@ -1,0 +1,6 @@
+{
+  "speech": "StormScience Speech recognition module package\r\n@author ArthurZheng",
+  "speech.hear": "Recognize voice.\r\n@return {number}  the index of speech list",
+  "speech.say": "Say words.\r\n@param {string} str - Hex code of words with space betwin, eg: C4 E3 BA C3 \r\n@note Because makecode transformation chinese characters as UTF-8, but the TTS\r\nfunction using GBK code, so we can only use data that has been transcoded.",
+  "speech.setPin": "Set speech module pins, should run at first.\r\n@param {SerialPin} t - transmit pin of uart, eg: SerialPin.P1\r\n@param {SerialPin} r - recive pin of uart, eg: SerialPin.P2"
+}

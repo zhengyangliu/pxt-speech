@@ -6,16 +6,17 @@
 namespace speech {
     
     /**
-     * Initialize speech module and set pins, should run at first.
-     * @param {SerialPin} tx - transmit pin of uart, eg: SerialPin.P2
-     * @param {SerialPin} rx - recive pin of uart, eg: SerialPin.P1
+     * Set speech module pins, should run at first.
+     * @param {SerialPin} t - transmit pin of uart, eg: SerialPin.P1
+     * @param {SerialPin} r - recive pin of uart, eg: SerialPin.P2
      */
-    //% blockId=speechInit block="init speech module TX %tx RX %rx"
-    //% tx.defl=SerialPin.P2
-    //% rx.defl=SerialPin.P1
+    //% blockId=speechSetPin block="set speech module pins T %t R %r"
+    //% t.defl=SerialPin.P1
+    //% r.defl=SerialPin.P2
     //% weight=100
-    export function init(tx: SerialPin, rx: SerialPin): void {
-        serial.redirect(tx, rx, BaudRate.BaudRate115200)
+    export function setPin(t: SerialPin, r: SerialPin): void {
+        // swap tx pin and rx pin
+        serial.redirect(r, t, BaudRate.BaudRate115200)
         serial.setRxBufferSize(28)
     }
 
