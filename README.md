@@ -29,6 +29,10 @@ basic.forever(function () {
 
 ![example1](./doc/translate2.png)
 
+## Connection
+
+![example1](./doc/example1connection.png)
+
 ## Tools
 
 - ASRTool
