@@ -54,8 +54,8 @@ namespace speech {
      */
     //% blockId=speechHear block="recognize voice"
     export function hear(): number{
-        let rx = serial.readBuffer(28)
-        return (rx.getNumber(NumberFormat.Int8LE, 11))
+        let rx = serial.readBuffer(27)
+        return (rx.getNumber(NumberFormat.Int8LE, 12))
     }
 }
 
